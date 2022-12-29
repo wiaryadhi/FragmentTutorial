@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginFragment">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="24dp"
+        android:contentDescription="@string/logo_bcafinance"
+        app:layout_constraintBottom_toTopOf="@+id/textUserLog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bcafinancelogo"
+        tools:ignore="ImageContrastCheck" />
+
+    <EditText
+        android:id="@+id/textUserLog"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="44dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/john_domain_com"
+        android:inputType="textPersonName"
+        android:text="@string/username"
+        app:layout_constraintBottom_toTopOf="@+id/textPassLog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/textPassLog"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="41dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/john_password"
+        android:inputType="textPersonName"
+        android:text="@string/password"
+        app:layout_constraintBottom_toTopOf="@+id/btnRegistration"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textUserLog" />
+
+    <TextView
+        android:id="@+id/btnRegistration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="165dp"
+        android:layout_marginBottom="324dp"
+        android:text="Register"
+        android:textColor="#3F51B5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonLogin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textPassLog" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="28dp"
+        android:backgroundTint="#0199A6"
+        android:text="@string/button"
+        android:textColor="@color/white"
+        android:theme="@style/ShapeAppearanceOverlay.Material3.Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnRegistration"
+        app:layout_constraintTop_toBottomOf="@+id/textPassLog" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

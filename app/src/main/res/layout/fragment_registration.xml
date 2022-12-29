@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginFragment">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="45dp"
+        android:contentDescription="@string/logo_bcafinance"
+        app:layout_constraintBottom_toTopOf="@+id/textUserReg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bcafinancelogo"
+        tools:ignore="ImageContrastCheck" />
+
+    <EditText
+        android:id="@+id/textUserReg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="27dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/textPassReg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/textPassReg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="30dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/textRetypePassreg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textUserReg" />
+
+    <EditText
+        android:id="@+id/textRetypePassreg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="42dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="Re-Type Password"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/buttonRegister"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textPassReg" />
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="134dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="212dp"
+        android:backgroundTint="#0199A6"
+        android:text="Register"
+        android:textColor="@color/white"
+        android:theme="@style/ShapeAppearanceOverlay.Material3.Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textRetypePassreg" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
